@@ -41,3 +41,5 @@ bin/classes/itu/pervasive/btpositioning/MainActivity.class
 bin/resources.ap_
 
 bin/resources.ap_
+
+*.class
