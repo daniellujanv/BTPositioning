@@ -1,18 +1,42 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity"
+    >
 
-    <TextView
-        android:id="@+id/text"
+    <ProgressBar
+        android:id="@+id/wholeprogressbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="vertical"
-        android:text="@string/hello_world" />
+        android:layout_gravity="top" />
 
-</ScrollView>
+	<ProgressBar
+	    android:id="@+id/individualprogressbar"
+	    style="@android:style/Widget.ProgressBar.Horizontal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"        
+	    android:layout_below="@id/wholeprogressbar"
+	    android:layout_gravity="top" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/individualprogressbar"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:scrollbars="vertical"
+            android:text="@string/hello_world" />
+    </ScrollView>
+</RelativeLayout>

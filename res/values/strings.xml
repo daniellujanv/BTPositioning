@@ -4,5 +4,6 @@
     <string name="app_name">BTPositioning</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_send_info">SendInfo</string>
 
 </resources>
