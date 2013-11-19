@@ -247,11 +247,11 @@ public class MainActivity extends Activity {
 					}
 					publishProgress(i+1);
 					Log.w("run", ""+(i+1));
-					Thread.sleep(3000);
+					Thread.sleep(300);
 					//					btPositioning = new BtPositioning();
 					discoverDevices();
 					while(goRead){
-						Thread.sleep(3000);
+						Thread.sleep(5000);
 						if(goRead && btPositioningAll.readings.size() < 48){//if goRead is true it means the readings.size() is still less than 6 and possibly frozen 
 							try{
 								undiscoverDevices();								
